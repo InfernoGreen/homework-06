@@ -19,7 +19,11 @@
   --model-idx: 100;
   --anim-fast: 300ms ease-in;
 }
-
+/**
+  |============================
+  | _______________ОБЩИЕ СТИЛИ
+  |============================
+*/
 body,
 main {
   font-family: 'Roboto', sans-serif;
@@ -37,24 +41,25 @@ ul {
   margin: 0;
   padding: 0;
 }
-
-
-.mail,
-.tel {
-  padding: 24px 0;
-}
-
 button {
   cursor: pointer;
   border-radius: 4px;
 }
-
 img {
   display: inline;
   max-width: 100%;
   height: auto;
 }
 
+/**
+  |============================
+  | _______________ИНДИВИДУАЛЬНЫЕ СТИЛИ
+  |============================
+*/
+.mail,
+.tel {
+  padding: 24px 0;
+}
 
 .hidden {
   position: absolute;
@@ -68,11 +73,9 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
 .section {
   padding: 120px 0;
 }
-
 .container {
   padding-left: 15px;
   padding-right: 15px;
@@ -80,23 +83,25 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
-
 .link {
   text-decoration: none;
 }
-
 .list {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-
 .img-shad {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
-/* HEDDER>>>>>>>>>>>>>>>>>> LOGO + NAV + ADDRESS*/
+/**
+  |============================
+  | HEDDER>>>>>>>>>>>>>>>>>> 
+   __________________________LOGO + NAV + ADDRESS
+  |============================
+*/
 .header-container {
   display: flex;
   align-items: center;
@@ -533,8 +538,6 @@ fill:#fff;
   padding-bottom: 120px;
 }
 
-/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>FOOTER>>>LOGO+TEXT*/
-
 
 .box_n_box {
   display: flex;
@@ -544,10 +547,12 @@ fill:#fff;
   color: var(--wight-color);
   margin-bottom: 16px;
 }
+/* 
+  |============================
+  | >>>>>>>>>>>>>>FOOTER>>>
+  |============================
+ */
 
-/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
-
-/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 .footer {
   background-color: var(--heading-color);
   padding: 100px 0;
@@ -566,7 +571,6 @@ fill:#fff;
   margin-right: 120px;
   
 }
-
 .bg-link-foot {
   display: flex;
   width: 100%;
@@ -579,12 +583,10 @@ fill:#fff;
     transition-duration: var(--transition-duration);
     transition-timing-function: var(--transition-timing-function);
 }
-
 .bg-link-foot:hover,
 .bg-link-foot:focus {
   background: var(--foot-focus);
 }
-
 .footer-logo {
   display: inline-block;
   line-height: 21px;
@@ -606,7 +608,49 @@ fill:#fff;
   color: #e7e9fc;
   width: 264px;
 }
+/* 
+  |============================
+  | >>>>>>>>>>>>>>FOOTER>>>suscribe
+  |============================
+ */
 
+ .form-subscrib-blok { 
+  margin-left: auto;
+}
+.form-foot {
+  margin-left: auto;
+  display: flex;
+}
+.footer-title {
+  color: #F4F4FD;
+  margin-bottom: 16px;
+}
+.input-footer {
+  outline: transparent;
+  color: white;
+  padding: 0 16px;
+  height: 40px;
+  width: 264px;
+  background-color: #2e2f42;
+  border: 1px solid #ffffff;
+  /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15)); */
+  border-radius: 4px;
+  margin-right: 24px;
+  transition: border-color var(--anim-fast);
+}
+.sub-button {
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px 24px;
+gap: 16px;
+background: var(--btn-color);
+color: var(--wight-color);
+}
+.subscribe-button-ico {
+  fill: var(--wight-color);
+}
 
 /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>PROGECT LIST( NAVIGATION IN HEADER)*/
 
